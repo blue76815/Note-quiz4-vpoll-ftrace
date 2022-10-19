@@ -1,4 +1,4 @@
-# (總結)quiz3 vpoll  ftrace分析
+# (總結) quiz4 vpoll  ftrace分析
 ###### tags: `linux-summer-2021`
 <style>
 .blue {
@@ -11,7 +11,7 @@
 ## 參考資料
 [linux ftrace原理](https://www.geek-share.com/detail/2667839806.html)
 
-[2.1 ftrace 的原理与使用](https://hotttao.github.io/2020/01/03/linux_perf/03_ftrace/)
+[2.1 ftrace 的原理与使用](https://hotttao.github.io/posts/linux/linux_perf/03_ftrace/)
 
 ## ftrace 分析流程
 
@@ -912,7 +912,7 @@ root@blue76815-virtual-machine:/sys/kernel/debug/tracing#
 ## 進階分析方法
 
 ### 方法1.trace-cmd
-在 [2.1 ftrace 的原理与使用](https://hotttao.github.io/2020/01/03/linux_perf/03_ftrace/)提到
+在 [2.1 ftrace 的原理与使用](https://hotttao.github.io/posts/linux/linux_perf/03_ftrace/#6-trace-cmd)提到
 > ## 6. trace-cmd
 > trace-cmd 可以把上面这些步骤给包装起来，通过同一个命令行工具，就可完成上述所有过程。下面是示例2 中跟踪 do_sys_open 的 trace-cmd 版本。
 > 
@@ -1023,7 +1023,7 @@ cpus=2
 `trace-cmd record -h` 可查到 trace-cmd 的使用說明
 每個追蹤函數 -g 代表 set graph function
 
-參考 [2.1 ftrace 的原理与使用 6. trace-cmd](https://hotttao.github.io/2020/01/03/linux_perf/03_ftrace/) 的用法 
+參考 [2.1 ftrace 的原理与使用 6. trace-cmd](https://hotttao.github.io/posts/linux/linux_perf/03_ftrace/#6-trace-cmd) 的用法 
 
 輸入
 ```
